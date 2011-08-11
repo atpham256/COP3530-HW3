@@ -1,0 +1,46 @@
+// Name: Anthony T. Pham
+// UF ID: 5038-1111
+// Discussion section #: 1079
+// Data Structures Homework #3
+// To compile:
+// make all
+// To clean:
+// make clean
+
+
+Below are the answers to the non-code portions of hw3. After the answers are clarifications/explanations
+to how my main .cpp files work.
+
+hw3prob1:
+b) Our reverse member function is linear because we only access each index of the element[] array once.
+As we can see the for loop only runs listSize/2 times and each time it accesses 2 indexes to swap. Therefore,
+listSize indexes will be accessed which is linear.
+
+d) Our reverse non-member function is also linear, just like the reverse member function. This is because
+our algorithm is basically the same as the reverse member function. We only access each index of the
+element[] array once throughout the whole execution of the function. The only difference is that we have
+to use accessor methods in order to modify and access the member functions of the arrayList class.
+
+e) i) Time for reverse member function (1000 integer arrayList): 0 seconds
+	Time for reverse non-member function (1000 integer arrayList): 0 seconds
+	
+	Time for reverse member function (5000 integer arrayList): 0 seconds
+	Time for reverse non-member function (5000 integer arrayList): 0 seconds
+	
+	Time for reverse member function (10,000 integer arrayList): 0 seconds
+	Time for reverse non-member function (10,000 integer arrayList): 0 seconds
+	
+   ii) Time for reverse member function (sortedDictionary arrayList): 0 seconds
+	Time for reverse non-member function (sortedDictionary arrayList): 0 seconds
+	
+Since our time complexity is linear, both algorithms are very fast and it takes less than 1 second to
+sort an arrayList even of size 10,000.
+
+Explanations/clarifications:
+hw3prob1.cpp sorts arrayLists of 1000, 5000, and 10000 integers using both reverse methods. It also sorts
+arrayLists of the sortedDictionary from hw1 using both sort methods. The output on the console shows the
+time it takes to sort each arrayList using each method.
+
+hw4prob2.cpp reads in the Dictionary file to an arrayList of strings. It then sorts the arrayList using
+the STL sort method and seamlessPointer iterators and writes the sorted arrayList into a file using
+seamlessPointer iterators.
